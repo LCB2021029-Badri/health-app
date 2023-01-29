@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_primary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    tools:context="com.example.yo7a.healthwatcher.Primary">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:weightSum="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:id="@+id/HR"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="15dp"
+                android:text="Heart \nRate"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttononclick" />
+
+            <Button
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/RR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="15dp"
+                android:text="Respiration \nRate"
+                android:layout_marginVertical="5dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttononclick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginVertical="0dp"
+            android:id="@+id/two"
+            android:layout_below="@id/one"
+            android:padding="15dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/BP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="15dp"
+                android:text="Blood\n Pressure"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttononclick"
+                app:srcCompat="@mipmap/bp1" />
+
+            <Button
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:id="@+id/O2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="15dp"
+                android:textAllCaps="false"
+                android:text="Soluble\n0xygen"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttononclick"
+                app:srcCompat="@mipmap/or1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/three"
+            android:weightSum="2"
+            android:layout_below="@id/two"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:padding="8dp"
+                android:id="@+id/VS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginVertical="5dp"
+                android:textAllCaps="false"
+                android:text="Vital \nSigns"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/buttononclick"
+                app:srcCompat="@mipmap/avs" />
+
+        </LinearLayout>
+
+        <!--   # SAMANWITH ikkada button ki code chey      -->
+        <Button
+            android:id="@+id/nexty"
+            android:layout_marginTop="60dp"
+            android:layout_width="150dp"
+            android:padding="8dp"
+            android:layout_height="150dp"
+            android:textAllCaps="false"
+            android:text="Diagnose\nNow"
+            android:gravity="center"
+            android:layout_below="@id/three"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/buttononclick2" />
+
+    </RelativeLayout>
+
+</LinearLayout>
