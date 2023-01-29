@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputEditText;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Retrofit;
@@ -22,15 +25,16 @@ public class MainActivityFirsty extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_firsty);
-        EditText nameEditText = findViewById(R.id.name);
+
+        TextInputEditText nameEditText = findViewById(R.id.name);
         String name = nameEditText.getText().toString();
-        EditText ageEditText = findViewById(R.id.age);
+        TextInputEditText ageEditText = findViewById(R.id.age);
         String age = ageEditText.getText().toString();
-        EditText sexEditText = findViewById(R.id.sex);
+        TextInputEditText sexEditText = findViewById(R.id.sex);
         String sex = sexEditText.getText().toString();
-        EditText heightEditText = findViewById(R.id.Height);
+        TextInputEditText heightEditText = findViewById(R.id.height);
         String height = heightEditText.getText().toString();
-        EditText weightEditText = findViewById(R.id.Weight);
+        TextInputEditText weightEditText = findViewById(R.id.weight);
         String weight = weightEditText.getText().toString();
         Button submitButton = findViewById(R.id.submit);
 

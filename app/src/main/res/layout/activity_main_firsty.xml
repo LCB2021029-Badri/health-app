@@ -4,68 +4,182 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivityFirsty">
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="344dp"
-        android:layout_height="49dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:gravity="center_horizontal"
-        android:hint="Name" />
+    android:gravity="center"
+    tools:context=".MainActivityFirsty"
+    android:background="@drawable/img">
 
-    <EditText
-        android:id="@+id/age"
-        android:layout_width="344dp"
-        android:layout_height="49dp"
-        android:hint="Age"
-        android:gravity="center_horizontal"
-        android:layout_below="@id/name"
-        android:layout_centerInParent="true"/>
-    <EditText
-        android:id="@+id/sex"
-        android:layout_width="344dp"
-        android:layout_height="49dp"
-        android:hint="Sex"
-        android:gravity="center_horizontal"
-        android:layout_below="@id/age"
-        android:layout_centerInParent="true"/>
-    <EditText
-        android:id="@+id/Height"
-        android:layout_width="344dp"
-        android:layout_height="49dp"
-        android:hint="Height"
-        android:layout_below="@id/sex"
-        android:layout_centerInParent="true"
-        android:gravity="center_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/Weight"
-        android:layout_width="344dp"
-        android:layout_height="49dp"
-        android:hint="Weight"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/Height"
-        android:gravity="center_horizontal"/>
-
-
-
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Weight"
-        android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
-        android:text="Submit"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/editbackground"
+        app:hintTextColor="@color/mainLight"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editbackground"
+            android:drawableStart="@drawable/icon_name"
+            android:drawablePadding="10dp"
+            android:hint="Name"
+            android:textColorHint="@color/mainDark" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/one"
+        android:id="@+id/two"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/submit"
-        android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
-        android:text="Next"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/editbackground"
+        app:hintTextColor="@color/mainLight"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editbackground"
+            android:drawableStart="@drawable/baseline_date_range_24"
+            android:drawablePadding="10dp"
+            android:hint="Age"
+            android:textColorHint="@color/mainDark" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/two"
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/editbackground"
+        app:hintTextColor="@color/mainLight"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editbackground"
+            android:drawableStart="@drawable/icon_gender"
+            android:drawablePadding="10dp"
+            android:hint="Sex"
+            android:textColorHint="@color/mainDark" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/three"
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/editbackground"
+        app:hintTextColor="@color/mainLight"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editbackground"
+            android:drawableStart="@drawable/icon_height"
+            android:drawablePadding="10dp"
+            android:hint="Height"
+            android:textColorHint="@color/mainDark" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/four"
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/editbackground"
+        app:hintTextColor="@color/mainLight"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editbackground"
+            android:drawableStart="@drawable/icon_weight"
+            android:drawablePadding="10dp"
+            android:hint="Weight"
+            android:textColorHint="@color/mainDark" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_below="@id/five"
+        android:id="@+id/six"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttononclick"/>
+        <Button
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="Next"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttononclick" />
+
+    </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
 </RelativeLayout>
