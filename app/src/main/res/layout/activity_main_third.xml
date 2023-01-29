@@ -4,54 +4,160 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img"
     tools:context=".MainActivityThird">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previous Lab Reports"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#0EACDC"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <RelativeLayout
+        android:layout_below="@id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
     <CheckBox
         android:id="@+id/diabetes"
-        android:layout_width="100dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:button="@null"
+        android:drawableRight="@drawable/checkboxbadri"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:text="Diabetes"
-        tools:ignore="MissingConstraints" />
+        android:text="Diabetes"/>
 
-    <CheckBox
-        android:id="@+id/cholestrol"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/diabetes"
-        android:layout_centerInParent="true"
-        android:text="Cholestrol" />
+        <CheckBox
+            android:id="@+id/cholestrol"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diabetes"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:button="@null"
+            android:drawableRight="@drawable/checkboxbadri"
+            android:padding="5dp"
+            android:text="Cholestrol"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <CheckBox
-        android:id="@+id/x"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/cholestrol"
-        android:layout_centerInParent="true"
-        android:text="X" />
-    <CheckBox
-        android:id="@+id/y"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/x"
-        android:text="Y" />
+        <CheckBox
+            android:id="@+id/x"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cholestrol"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:button="@null"
+            android:drawableRight="@drawable/checkboxbadri"
+            android:padding="5dp"
+            android:text="X"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <CheckBox
-        android:id="@+id/z"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/y"
-        android:layout_centerInParent="true"
-        android:text="Z" />
-    <Button
-        android:id="@+id/submit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <CheckBox
+            android:id="@+id/y"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/x"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:button="@null"
+            android:drawableRight="@drawable/checkboxbadri"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Y"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/z"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/y"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:button="@null"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:drawableRight="@drawable/checkboxbadri"
+            android:padding="5dp"
+            android:text="Z"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    <LinearLayout
         android:layout_below="@id/z"
-        android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
-        android:text="Submit"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/six"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:id="@+id/submit2"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:background="@drawable/buttononclick"/>
+
+        <Button
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:id="@+id/next3"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="Next"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:background="@drawable/buttononclick"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>

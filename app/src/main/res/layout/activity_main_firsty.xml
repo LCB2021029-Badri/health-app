@@ -4,13 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".MainActivityFirsty"
     android:background="@drawable/img">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/tv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="Patitent Details"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#0EACDC"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <RelativeLayout
+        android:layout_below="@id/tv"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/one"
@@ -28,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:layout_gravity="center"
             android:background="@drawable/editbackground"
             android:drawableStart="@drawable/icon_name"
@@ -54,6 +69,7 @@
             android:layout_height="35dp"
             android:layout_marginBottom="4dp"
             android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-medium"
             android:background="@drawable/editbackground"
             android:drawableStart="@drawable/baseline_date_range_24"
             android:drawablePadding="10dp"
@@ -78,6 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:layout_gravity="center"
             android:background="@drawable/editbackground"
             android:drawableStart="@drawable/icon_gender"
@@ -104,6 +121,7 @@
             android:layout_height="35dp"
             android:layout_marginBottom="4dp"
             android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-medium"
             android:background="@drawable/editbackground"
             android:drawableStart="@drawable/icon_height"
             android:drawablePadding="10dp"
@@ -130,6 +148,7 @@
             android:layout_marginBottom="4dp"
             android:layout_gravity="center"
             android:background="@drawable/editbackground"
+            android:fontFamily="sans-serif-condensed-medium"
             android:drawableStart="@drawable/icon_weight"
             android:drawablePadding="10dp"
             android:hint="Weight"
@@ -153,6 +172,7 @@
             android:textAllCaps="false"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:layout_marginHorizontal="15dp"
             android:text="Submit"
             android:textSize="20sp"
@@ -166,6 +186,7 @@
             android:textAllCaps="false"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:layout_marginHorizontal="15dp"
             android:text="Next"
             android:textSize="20sp"
