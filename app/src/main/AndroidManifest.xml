@@ -19,6 +19,8 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+
+
         <activity
             android:name=".MainActivityThird"
             android:exported="false">
@@ -26,6 +28,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
         <activity
             android:name=".MainActivitySecond"
             android:exported="false">
@@ -33,47 +37,27 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
         <activity
             android:name=".MainActivityFirsty"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity> <!-- <activity -->
-        <!-- android:name=".MainActivity2" -->
-        <!-- android:exported="true"> -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- <meta-data -->
-        <!-- android:name="android.app.lib_name" -->
-        <!-- android:value="" /> -->
-        <!-- </activity> -->
-        <!-- <activity -->
-        <!-- android:name=".MainActivity_a" -->
-        <!-- android:exported="false"> -->
-        <!-- <meta-data -->
-        <!-- android:name="android.app.lib_name" -->
-        <!-- android:value="" /> -->
-        <!-- </activity> -->
+        </activity>
+
         <activity
-            android:name=".First"
+            android:name=".Primary"
             android:configChanges="orientation"
-            android:exported="true"
-            android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
-            tools:ignore="IntentFilterExportedReceiver">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Primary"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".AboutApp"
             android:configChanges="orientation"
@@ -107,10 +91,6 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Login"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".RespirationProcess"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
@@ -126,6 +106,8 @@
             android:name=".VitalSignsResults"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
+
+
     </application>
 
 </manifest>

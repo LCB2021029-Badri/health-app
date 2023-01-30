@@ -22,12 +22,12 @@
     <ProgressBar
         android:id="@+id/VSPB"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:scaleY="4"
         android:indeterminate="false"
         android:max="26"
-        android:progress="1"
-        android:progressDrawable="@drawable/circular_progressbar" />
+        android:progress="1"/>
 
 </LinearLayout>

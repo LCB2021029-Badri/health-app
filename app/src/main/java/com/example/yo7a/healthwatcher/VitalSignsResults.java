@@ -2,6 +2,7 @@ package com.example.yo7a.healthwatcher;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,7 +31,7 @@ public class VitalSignsResults extends AppCompatActivity {
         TextView VSBPS = this.findViewById(R.id.BP2V);
         TextView VSHR = this.findViewById(R.id.HRV);
         TextView VSO2 = this.findViewById(R.id.O2V);
-        ImageButton All = this.findViewById(R.id.SendAll);
+        Button All = this.findViewById(R.id.SendAll);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
